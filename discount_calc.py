@@ -1,10 +1,10 @@
-def calculate_discount(price, discount_percent):
+def calculate_discount(prices, discount_percent):
     if discount_percent >= 20:
-        discount_amount = price * (discount_percent / 100)
-        final_price = price - discount_amount
+        discount_amount = prices * (discount_percent / 100)
+        final_price = prices - discount_amount
         return final_price
     else:
-        return price
+        return prices
 
 # Prompt the user for input
 original_price = float(input("Enter the original price of the item: "))
